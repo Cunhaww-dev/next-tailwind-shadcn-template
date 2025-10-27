@@ -1,13 +1,9 @@
 "use client";
 
 import { AppSidebar } from "@/components/layout/app-sidebar";
-import { ThemeSelector } from "@/components/shared/theme-selector";
-import { ModeToggle } from "@/components/shared/mode-toggle";
-import { Separator } from "@/components/ui/separator";
 import {
   SidebarInset,
-  SidebarProvider,
-  SidebarTrigger,
+  SidebarProvider
 } from "@/components/ui/sidebar";
 
 import React from "react";

@@ -2,23 +2,11 @@
 
 import * as React from "react";
 import {
-  BookOpen,
-  Bot,
-  Command,
-  Frame,
-  LifeBuoy,
-  Map,
-  PieChart,
-  ScrollText,
-  Send,
-  Settings2,
-  SquareTerminal,
+  LifeBuoy, ScrollText, Settings2,
+  SquareTerminal
 } from "lucide-react";
 
 import { NavMain } from "@/components/layout/nav-main";
-import { NavProjects } from "@/components/layout/nav-projects";
-import { NavSecondary } from "@/components/layout/nav-secondary";
-import { NavUser } from "@/components/layout/nav-user";
 import {
   Sidebar,
   SidebarContent,
