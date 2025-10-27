@@ -4,7 +4,6 @@ import { ThemeSelector } from "@/components/shared/theme-selector";
 import { ModeToggle } from "@/components/shared/mode-toggle";
 import { Separator } from "@/components/ui/separator";
 import { SidebarTrigger } from "@/components/ui/sidebar";
-import React from "react";
 
 export function Header() {
   return (
