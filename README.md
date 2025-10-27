@@ -114,6 +114,10 @@ Você pode criar novas pastas dentro de `src/components/` para agrupar o conteú
 
 **A regra é:** Se o componente é exclusivo de uma rota ou feature, agrupe-o em uma pasta com o nome dessa feature.
 
+---
+[Link para visualizar o Boilerplate](next-tailwind-shadcn-template.vercel.app)
+---
+
 [Doc Shadcn](https://ui.shadcn.com/docs/components)
 <br>
 [Doc Next](https://nextjs.org/docs/app/getting-started/installation)
