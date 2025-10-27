@@ -114,6 +114,19 @@ Você pode criar novas pastas dentro de `src/components/` para agrupar o conteú
 
 **A regra é:** Se o componente é exclusivo de uma rota ou feature, agrupe-o em uma pasta com o nome dessa feature.
 
+# 🎨 Filosofia de Estilização (Como Usar Cores)Este boilerplate está configurado com um sistema de temas avançado (dark/light mode + paletas de cores). Para que ele funcione, você deve seguir uma Regra de Ouro:Nunca use cores explícitas. Use sempre as variáveis de cor semânticas.O shadcn/ui funciona usando variáveis CSS do Tailwind que representam conceitos (semântica) em vez de cores específicas. Quando você troca o tema (de "Blue" para "Violet", por exemplo), o globals.css atualiza o valor dessas variáveis.Como fazer na práticaAo criar um componente customizado, sempre use as classes semânticas do Tailwind:❌ O Jeito Errado (Cor Explícita)TypeScript// NÃO FAÇA ISSO!
+// Este componente será sempre azul, quebrando o seletor de temas.
+<div className="bg-blue-600 text-white p-2 rounded-lg">
+  Meu Componente
+</div>
+✅ O Jeito Correto (Cor Semântica)TypeScript// FAÇA ISSO!
+// Este componente usará a cor definida em '--primary',
+// mudando automaticamente com o tema.
+<div className="bg-primary text-primary-foreground p-2 rounded-lg">
+  Meu Componente
+</div>
+Dicionário de Cores SemânticasUse esta tabela como referência ao estilizar seus componentes:Classe TailwindVariável CSSUso Semântico (O que significa)bg-primary--primaryA cor principal de "ação" (botões de confirmar, links ativos).text-primary-foreground--primary-foregroundCor do texto para ser usado em cima de bg-primary.bg-secondary--secondaryCor de fundo para ações secundárias (botões "neutros").text-secondary-foreground--secondary-foregroundTexto para usar em cima de bg-secondary.bg-destructive--destructiveA cor de "perigo" (botões de excluir, mensagens de erro).text-destructive-foreground--destructive-foregroundTexto para usar em cima de bg-destructive.bg-accent--accentCor sutil para "hover" (quando passa o mouse por cima).text-accent-foreground--accent-foregroundTexto para usar em cima de bg-accent.bg-background--backgroundA cor de fundo principal da sua página.text-foreground--foregroundA cor de texto principal da sua página.bg-card--cardA cor de fundo de elementos "flutuantes" (cards, pop-ups).text-card-foreground--card-foregroundTexto para usar em cima de bg-card.text-muted-foreground--muted-foregroundCor de texto "cinza", para informações secundárias, placeholders.border-border--borderA cor padrão para bordas (divisórias, contornos).border-input--inputA cor da borda específica para caixas de input.Ao seguir esta regra, toda a sua aplicação responderá automaticamente às mudanças de tema (dark/light e paletas de cores) sem nenhum esforço adicional.
+
 ---
 [Link para visualizar o Boilerplate](next-tailwind-shadcn-template.vercel.app)
 ---
