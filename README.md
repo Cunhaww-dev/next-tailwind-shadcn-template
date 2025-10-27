@@ -1,5 +1,3 @@
------
-
 # 🚀 Next.js 15 Boilerplate
 
 Um template inicial robusto para projetos Next.js, pré-configurado com Next.js 15, Tailwind CSS e a biblioteca de componentes shadcn/ui.
